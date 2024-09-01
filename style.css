@@ -12,11 +12,6 @@ a {
     color: #FFF;
 }
 
-/* Imagens */
-img {
-    max-width: 100%;
-}
-
 /* Textos */
 p {
     font-size: 1.2em;
@@ -67,7 +62,6 @@ header {
 /* Menu de navegação */
 .menu ul {
     display: flex;
-    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -83,18 +77,11 @@ header {
     position: relative;
 }
 
-.menu .menu-link::after {
-    content: "";
+.menu .menu-link:not(:last-child)::after {
+    content: "|";
     position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 20px;
-    border-right: 1px solid #E9F3FE;
-}
-
-.menu .menu-link:last-child::after {
-    border: none;
+    right: -15px;
+    color: #E9F3FE;
 }
 
 .menu .menu-link:hover {
