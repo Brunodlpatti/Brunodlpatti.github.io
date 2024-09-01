@@ -1,103 +1,82 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
     text-decoration: none;
 }
 
-/* Links */
-a {
-    color: #FFF;
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #007fff;
 }
 
-/* Textos */
-p {
-    font-size: 1.2em;
-    line-height: 1.4em;
-    color: #007fff;
-}
-
-h2 {
-    color: #007fff;
+.center {
     text-align: center;
 }
 
-/* Estrutura básica do documento */
-html, body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #E9F3FE;
+h1 {
+    color: #007fff;
 }
 
-/* Cabeçalho com barra de navegação */
-header {
-    width: 100%;
-    background-color: #cccccc; /* Cor cinza para a barra */
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
 }
 
-.menu ul {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+footer a {
+    margin: 20px;
+    text-align: center;
 }
 
-.menu .menu-link {
-    color: #141A28;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    transition: all .3s ease-in-out;
-    position: relative;
+footer p {
+    margin-top: 2px;
 }
 
-.menu .menu-link:not(:last-child)::after {
-    content: "|";
-    margin-left: 10px;
-    color: #141A28;
-}
-
-.menu .menu-link:hover {
-    opacity: .75;
-}
-
-/* Container principal */
 .container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0px 50px;
 }
 
-/* Main */
-main {
+nav a {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #5BBE42;
+}
+
+.contact-form input{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
 }
 
-/* Cartão de apresentação */
-.super-card {
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.contact-form input[type=text] {
+    height: 100px;
 }
 
-.super-card-text {
-    margin-top: 20px;
-}
-
-.super-card-text p + p {
-    margin-top: 1em;
+button {
+    color: black;
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
 }
