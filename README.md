@@ -1,2 +1,2 @@
-# Brunodlpatti.github.io
-Meu web site
+# Web site sample
+web site
